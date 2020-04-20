@@ -1,21 +1,21 @@
-import Link from 'next/link'
-import ReactMarkdown from 'react-markdown'
+import Link from "next/link";
+import ReactMarkdown from "react-markdown";
 
 const BlogList = ({ allBlogs }) => {
   function truncateSummary(content) {
-    return content.slice(0, 200).trimEnd()
+    return content.slice(0, 200).trimEnd();
   }
 
   function reformatDate(fullDate) {
-    const date = new Date(fullDate)
-    return date.toDateString().slice(4)
+    const date = new Date(fullDate);
+    return date.toDateString().slice(4);
   }
 
   return (
     <>
       <ul className="list">
         {allBlogs.length > 1 &&
-          allBlogs.map(post => (
+          allBlogs.map((post) => (
             <Link key={post.slug} href={{ pathname: `/blog/${post.slug}` }}>
               <a>
                 <li>
@@ -130,7 +130,7 @@ const BlogList = ({ allBlogs }) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
-export default BlogList
+export default BlogList;
