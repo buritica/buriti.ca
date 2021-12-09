@@ -22,7 +22,7 @@
   "homepage": "https://github.com/buritica/buriti.ca#readme",
   "dependencies": {
     "gray-matter": "^4.0.2",
-    "next": "^9.3.5",
+    "next": "^11.1.3",
     "raw-loader": "^4.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
